@@ -1,14 +1,16 @@
 var result;
-for (var i = 1; i < 101; i++) {
+
+for (var i = 1; i <= 100; i++) {
   result = "";
-  if ([i] % 2 == 0) {
-    result += "Fizz<hr>";
+  if ([i] % 2 == 0 && [i] % 3 == 0) {
+    result += "LuisTheMaster<hr>";
+  } else if ([i] % 2 == 0) {
+    result += "IESD<hr>";
   } else if ([i] % 3 == 0) {
-    result += "Buzz<hr>";
-  } else if ([i] % 5 == 0) {
-    result += "FizzBuzz<hr>";
+    result += "Forever<hr>";
   } else {
     result += [i] + "<hr>";
   }
+
   document.write(result);
 }
